@@ -8,7 +8,7 @@
 
 # More specific configuration for our function named "api"
 [functions."api"]
-  included_files = ["app.py", "templates/**", "static/**"]
+  included_files = ["templates/**", "static/**"]
 
 # The redirect rule remains the same
 [[redirects]]
