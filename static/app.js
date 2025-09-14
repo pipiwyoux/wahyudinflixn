@@ -1,0 +1,1 @@
+// Konten lengkap dari static/app.js
