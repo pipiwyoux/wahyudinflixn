@@ -2,9 +2,15 @@
   command = "pip install -r requirements.txt"
   functions = "netlify/functions"
 
-[functions]
+# Set a specific, modern Python version
+[build.environment]
+  PYTHON_VERSION = "3.11"
+
+# More specific configuration for our function named "api"
+[functions."api"]
   included_files = ["app.py", "templates/**", "static/**"]
 
+# The redirect rule remains the same
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/api"
